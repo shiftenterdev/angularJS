@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html data-ng-app="">
+    <head >
+        <title>
+            Data Iteration
+        </title>
+    </head>
+    <body data-ng-init="names=['bappa','abir','shimul']">
+        <div>
+            Name: <input type="text" data-ng-model="name"/> {{ name }}
+            <br/>
+            <ul>
+                <li data-ng-repeat="person in names"> {{ person }} </li>
+            </ul>
+        </div>
+    <script src="angular.min.js"></script>
+    </body>
+</html>
